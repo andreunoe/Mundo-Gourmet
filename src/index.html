@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo Gourmet</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.scss">
     <link rel="icon" type="image/png" href="img/logo_sinfondo.png">
   </head>
   <body>
@@ -18,13 +18,64 @@
           <ul class="menu">
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Categoría</a></li>
+            <li><a href="#">Categoría2</a></li>
             <li><a href="#">Enlaces</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <h1>Mundo Gourmet</h1>
-    <p class="eslogan">Sabores, recetas y experiencias que inspiran</p>
+    <section class="hero">
+      <div class="hero__icon">
+        <img src="img/logo_sinfondo.png" alt="Icono de la marca"/>
+      </div>
+      <div>
+        <h1 class="hero_title animate__animated animate__bounce">Mundo Gourmet</h1>
+        <p class="brand__tagline animate__animated animate__bounce">Sabores, recetas y experiencias que inspiran</p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Mucho más que <span>comida</span>: una <span>experiencia</span> para todos los sentidos</h2>
+
+      <div class="product-grid">
+        <div class="product-card">
+          <i class="fa-solid fa-utensils fa-3x"></i>
+          <p>Nuestras recetas</p>
+        </div>
+
+        <div class="product-card">
+          <i class="fa-solid fa-alarm-clock fa-3x"></i>
+          <p>Eventos gastronómicos que recomendamos</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="slider-container swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/slider-1.jpg" alt="Slide 1">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider-2.jpg" alt="Slide 2">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider-3.jpg" alt="Slide 3">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider-4.jpg" alt="Slide 1">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider-5.jpg" alt="Slide 2">
+        </div>
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <script type="module" src="./script.js"></script>
   </body>
 </html>
