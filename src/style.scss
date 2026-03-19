@@ -85,6 +85,43 @@ header{
     }
 }
 
+.hero_section{
+    display: grid;
+    grid-template-columns: repeat(1, 60%);
+    justify-content: center; 
+    align-items: center;
+    gap: 5rem;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/hero_bck.jpg') center/cover no-repeat;
+    height: 60vh;
+
+    .hero_title{
+        margin-top: 3rem;
+        margin-bottom: 10px;
+        font-size: 3rem;
+        font-family: "Eagle Lake", serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        color: white;
+        /*font-family: "Montaga", serif;
+        font-weight: 400;
+        font-style: normal;*/
+    }
+
+    .brand__tagline{
+        font-size: 1.2rem;
+        font-weight: 800;
+        font-style: italic;
+        margin-top: 0;
+        font-family: "Eagle Lake", serif;
+        font-weight: 400;
+        text-align: center;
+        color: white;
+        /*font-family: "Montaga", serif;
+        font-weight: 400;*/
+    }
+}
+
 .section-title{
     margin-top: 8rem;
     font-size: 2rem;
@@ -199,22 +236,50 @@ header{
     color: #222;
   }
 }
-/*
-.section__link{
-  display: inline-block;
-  font-family: "Lexend Deca", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 1.2rem;
-  color: #222;
-  text-decoration: none;
-  margin: 1rem auto 0 auto;
 
-  &:hover{
+.section__highlight2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  a{
+    display: inline-block;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2rem;
+    color: #222;
+    text-decoration: none;
+    margin: 1rem auto 0 auto;
+
+    &:hover{
+      color: burlywood;
+    }
+  }
+
+  h2{
+    margin-top: 8rem;
+    font-size: 2rem;
+    font-family: "Eagle Lake", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
     color: burlywood;
   }
-}*/
+
+  p{
+    max-width: 1000px;
+    text-align: center;
+    margin: 3rem auto 3rem auto;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: #222;
+  }
+}
 
 .slider-container {
   width: 70%;
@@ -304,6 +369,8 @@ header{
     }
 
     &--links ul {
+      display: flex;
+      gap: 20px;
       list-style: none;
       padding: 0;
 
