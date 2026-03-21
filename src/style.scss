@@ -156,6 +156,7 @@ header{
 .product-grid2{
     margin: 0 auto;
     margin-top: 3rem;
+    margin-bottom: 10rem;
     display: grid;
     grid-template-columns: repeat(3, 40%);
     justify-content: center; 
@@ -242,6 +243,15 @@ header{
   flex-direction: column;
   justify-content: center;
 
+  .section-intro{
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
   a{
     display: inline-block;
     font-family: "Lexend Deca", sans-serif;
@@ -259,7 +269,6 @@ header{
   }
 
   h2{
-    margin-top: 8rem;
     font-size: 2rem;
     font-family: "Eagle Lake", serif;
     font-weight: 400;
@@ -308,7 +317,6 @@ header{
 }
 
 .cta {      
-  margin-top: 10rem;
   width: cover;
   background-color: brown;
   display: flex;
