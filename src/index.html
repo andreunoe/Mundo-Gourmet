@@ -4,49 +4,32 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo Gourmet</title>
-    <link rel="stylesheet" href="style.scss">
-    <link rel="icon" type="image/png" href="img/logo_sinfondo.png">
+    <link rel="stylesheet" href="style2.scss">
+    <link rel="icon" type="image/png" href="img/logo_favicon.png">
   </head>
   <body>
-    <header>
-      <div class="navbar">
-        <div class="logo">
-          <img src="img/logo_sinfondo.png" alt="Logo Mundo Gourmet">
-        </div>
-
-        <nav>
-          <ul class="menu">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="categoria.html">Categoría</a></li>
-            <li><a href="categoria2.html">Categoría2</a></li>
-            <li><a href="#">Enlaces</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <include src="./src/partials/header.html"></include>
 
     <section class="hero">
       <div class="hero__icon">
         <img src="img/logo_sinfondo.png" alt="Icono de la marca"/>
-      </div>
-      <div>
-        <h1 class="hero_title animate__animated animate__bounce">Mundo Gourmet</h1>
-        <p class="brand__tagline animate__animated animate__bounce">Sabores, recetas y experiencias que inspiran</p>
       </div>
     </section>
 
     <section>
       <h2 class="section-title">Mucho más que <span>comida</span>: una <span>experiencia</span> para todos los sentidos</h2>
 
-      <div class="product-grid">
+      <div class="product-grid" data-aos="fade-up">
         <div class="product-card">
           <i class="fa-solid fa-utensils fa-3x"></i>
           <p>Nuestras recetas</p>
+          <a href="categoria.html">Acceder</a>
         </div>
 
         <div class="product-card">
           <i class="fa-solid fa-alarm-clock fa-3x"></i>
           <p>Eventos gastronómicos que recomendamos</p>
+          <a href="categoria2.html">Acceder</a>
         </div>
       </div>
     </section>
@@ -79,11 +62,15 @@
     <section class="section__highlight">
       <h2 class="section-title">Nuestras recetas favoritas</h2>
 
-      <div class="product-grid2">
+      <p class="section__info">Descubre un mundo de sabores y déjate inspirar por nuestras recetas.<br> Desde platos sencillos hasta propuestas más elaboradas, tenemos algo para cada ocasión.<br> ¿Quieres verlas todas?</p>
+
+      <a href="categoria.html" class="section__link">Descubre todas nuestras recetas</a>
+
+      <div class="product-grid2" data-aos="fade-up">
         <div class="product-card">
           <img src="img/risotto.jpg" alt="Imagen risotto de setas">
           <p>Risotto de setas</p>
-          <a href="#">Ver todos los detalles >></a>
+          <a href="det.html">Ver todos los detalles >></a>
         </div>
 
         <div class="product-card">
@@ -95,19 +82,19 @@
         <div class="product-card">
           <img src="img/tarta-queso.jpg" alt="Imagen tarta de queso">
           <p>Tarta de queso</p>
-          <a href="#">Ver todos los detalles >></a>
+          <a href="det2.html">Ver todos los detalles >></a>
         </div>
       </div>
-
-      <p>Descubre un mundo de sabores y déjate inspirar por nuestras recetas.<br> Desde platos sencillos hasta propuestas más elaboradas, tenemos algo para cada ocasión.<br> ¿Quieres verlas todas?</p>
-
-      <a href="categoria.html" class="section__link">Descubre todas nuestras recetas</a>
     </section>
 
     <section class="section__highlight">
       <h2 class="section-title">Los mejores eventos gastronómicos</h2>
 
-      <div class="product-grid2">
+      <p class="section__info">Descubre los eventos gastronómicos más interesantes y vive experiencias únicas alrededor de la cocina.<br> ¿Te animas a explorar todo lo que tenemos preparado?</p>
+
+      <a href="categoria2.html" class="section__link">Descubre todos los eventos gastronómicos</a>
+
+      <div class="product-grid2" data-aos="fade-up">
         <div class="product-card">
           <img src="img/meat-carnival.jpg" alt="Imagen carne a la brasa">
           <p>Meat Carnival</p>
@@ -117,7 +104,7 @@
         <div class="product-card">
           <img src="img/coffee-fest.jpg" alt="Imagen granos de café">
           <p>Coffee Fest</p>
-          <a href="#">Ver todos los detalles >></a>
+          <a href="det3.html">Ver todos los detalles >></a>
         </div>
 
         <div class="product-card">
@@ -126,10 +113,6 @@
           <a href="#">Ver todos los detalles >></a>
         </div>
       </div>
-
-      <p>Descubre los eventos gastronómicos más interesantes y vive experiencias únicas alrededor de la cocina.<br> ¿Te animas a explorar todo lo que tenemos preparado?</p>
-
-      <a href="#" class="section__link">Descubre todos los eventos gastronómicos</a>
     </section>
 
     <section class="cta">
@@ -137,26 +120,7 @@
       <button class="cta__button cta__button--primary">¡QUIERO CONOCER TODOS LOS DETALLES!</button>
     </section>
 
-    <footer class="footer">
-      <div class="footer__container">
-        <div class="footer__col footer__col--logo">
-          <img src="img/logo_sinfondo.png" alt="Mundo Gourmet">
-        </div>
-
-        <div class="footer__col footer__col--links">
-          <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="/categoria">Categoría</a></li>
-            <li><a href="/categoria2">Categoría2</a></li>
-            <li><a href="/enlaces">Enlaces</a></li>
-          </ul>
-        </div>
-
-        <div class="footer__col footer__col--info">
-          <p>Mundo Gourmet, desarrollado por Noé Andreu Serrano<br> para la asignatura Herramientas HTML y CSS.</p>
-        </div>
-      </div>
-    </footer>
+    <include src="./src/partials/footer.html"></include>
 
     <script type="module" src="./script.js"></script>
   </body>

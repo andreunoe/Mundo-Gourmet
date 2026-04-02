@@ -4,42 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categoría - Recetas</title>
-    <link rel="stylesheet" href="style.scss">
-    <link rel="icon" type="image/png" href="img/logo_sinfondo.png">
+    <link rel="stylesheet" href="style2.scss">
+    <link rel="icon" type="image/png" href="img/logo_favicon.png">
 </head>
 <body>
-    <header>
-      <div class="navbar">
-        <div class="logo">
-          <img src="img/logo_sinfondo.png" alt="Logo Mundo Gourmet">
-        </div>
+    <include src="./src/partials/header.html"></include>
 
-        <nav>
-          <ul class="menu">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="categoria.html">Categoría</a></li>
-            <li><a href="categoria2.html">Categoría2</a></li>
-            <li><a href="#">Enlaces</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <section class="hero_section">
-      <div>
+    <section class="hero_section hero_recetas">
         <h1 class="hero_title animate__animated animate__bounce">Recetas para cada día</h1>
         <p class="brand__tagline animate__animated animate__bounce">Bienvenido a tu espacio de cocina diaria, donde encontrarás recetas fáciles, sabrosas y pensadas para cualquier momento. Desde platos rápidos para el día a día hasta ideas especiales para sorprender, aquí la cocina se convierte en algo sencillo y disfrutable.<br> Descubre nuevos sabores, aprovecha ingredientes que ya tienes en casa y convierte cada comida en una pequeña experiencia. Porque cocinar bien no tiene que ser complicado, solo delicioso.</p>
-      </div>
     </section>
 
     <section class="section__highlight2">
       <div class="section-intro">
-        <i class="fa-solid fa-book-bookmark fa-3x"></i>
-        <h2 class="section-title">Recetas irresistibles para sorprender</h2>
+        <h2 class="section-title"><i class="fa-solid fa-book-bookmark fa-2l"></i> Recetas irresistibles para sorprender</h2>
         <p class="section-description">Explora todas nuestras recetas y encuentra justo lo que te apetece en cada momento. Desde opciones rápidas y sencillas hasta platos más elaborados, aquí tienes una colección pensada para inspirarte en la cocina cada día.</p>
       </div>
 
-      <div class="product-grid2">
+      <div class="product-grid2" data-aos="fade-up">
         <div class="product-card">
           <img src="img/risotto.jpg" alt="Imagen risotto de setas">
           <p>Risotto de setas</p>
@@ -96,25 +78,8 @@
       </div>
     </section>
 
-    <footer class="footer">
-      <div class="footer__container">
-        <div class="footer__col footer__col--logo">
-          <img src="img/logo_sinfondo.png" alt="Mundo Gourmet">
-        </div>
+    <include src="./src/partials/footer.html"></include>
 
-        <div class="footer__col footer__col--links">
-          <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="/categoria">Categoría</a></li>
-            <li><a href="/categoria2">Categoría2</a></li>
-            <li><a href="/enlaces">Enlaces</a></li>
-          </ul>
-        </div>
-
-        <div class="footer__col footer__col--info">
-          <p>Mundo Gourmet, desarrollado por Noé Andreu Serrano<br> para la asignatura Herramientas HTML y CSS.</p>
-        </div>
-      </div>
-    </footer>
+    <script type="module" src="./script.js"></script>
 </body>
 </html>

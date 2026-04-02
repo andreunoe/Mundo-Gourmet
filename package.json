@@ -10,11 +10,20 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.16.4",
     "parcel": "^2.14.0",
+    "posthtml-include": "^2.0.1",
     "sass": "^1.98.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.2.0",
     "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
     "swiper": "^12.1.2"
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "not dead",
+    ">= 0.5%",
+    "last 2 versions",
+    "IE 11"
+  ]
 }

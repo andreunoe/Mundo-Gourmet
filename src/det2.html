@@ -4,38 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalle - Tarta de Queso</title>
-    <link rel="stylesheet" href="style.scss">
-    <link rel="icon" type="image/png" href="img/logo_sinfondo.png">
+    <link rel="stylesheet" href="style2.scss">
+    <link rel="icon" type="image/png" href="img/logo_favicon.png">
 </head>
 <body>
-    <header>
-      <div class="navbar">
-        <div class="logo">
-          <img src="img/logo_sinfondo.png" alt="Logo Mundo Gourmet">
-        </div>
+    <include src="./src/partials/header.html"></include>
 
-        <nav>
-          <ul class="menu">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="categoria.html">Categoría</a></li>
-            <li><a href="categoria2.html">Categoría2</a></li>
-            <li><a href="#">Enlaces</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <section class="hero_section_detail">
-      <div>
+    <section class="hero_section_detail hero_tarta">
         <h1 class="hero_title animate__animated animate__bounce">Tarta de Queso</h1>
         <p class="brand__tagline animate__animated animate__bounce">La tarta de queso es un postre cremoso y delicado, con una textura suave que se deshace en el paladar. Su sabor equilibrado entre dulce y ligeramente ácido la convierte en una opción irresistible, perfecta para cualquier ocasión.</p>
-      </div>
     </section>
 
     <section class="section_det">
-        <h2>Ingredientes</h2>
-        <table class="recipe-table">
-            <caption class="recipe-table__title">Para 6 personas</caption>
+        <h2>Ingredientes para 6 personas</h2>
+        <table class="recipe-table" data-aos="fade-right">
   
             <thead class="recipe-table__head">
                 <tr class="recipe-table__row">
@@ -99,15 +81,15 @@
 
     <section class="section_det">
         <h2>¿Cómo hacer tarta de queso?</h2>
-        <p>Comenzaremos echando la nata líquida en un bol y agregándole el zumo de limón, removemos y dejamos reposar un mínimo de una hora a temperatura ambiente tapada con film. Veremos que una vez que pase el tiempo tendrá aspecto de nata cortada, reservamos en la nevera hasta el momento de usarla. Precalentamos el horno a 180 grados con calor arriba y abajo y posición media de la rejilla.</p>
-        <p>Engrasamos el molde con la nuez de mantequilla y vamos trituramos las galletas con un rodillo o robot de cocina, les agregamos el azúcar y la mantequilla fundida unos minutos en el microondas. Removemos hasta formar una masa con la que forraremos la base del molde, aplastando bien con el fondo de un vaso para que quede plana. Horneamos la masa durante quince minutos, una vez pasado el tiempo la retiramos y subimos la temperatura del horno a 225 grados.
+        <p data-aos="fade-right">Comenzaremos echando la nata líquida en un bol y agregándole el zumo de limón, removemos y dejamos reposar un mínimo de una hora a temperatura ambiente tapada con film. Veremos que una vez que pase el tiempo tendrá aspecto de nata cortada, reservamos en la nevera hasta el momento de usarla. Precalentamos el horno a 180 grados con calor arriba y abajo y posición media de la rejilla.</p>
+        <p data-aos="fade-right">Engrasamos el molde con la nuez de mantequilla y vamos trituramos las galletas con un rodillo o robot de cocina, les agregamos el azúcar y la mantequilla fundida unos minutos en el microondas. Removemos hasta formar una masa con la que forraremos la base del molde, aplastando bien con el fondo de un vaso para que quede plana. Horneamos la masa durante quince minutos, una vez pasado el tiempo la retiramos y subimos la temperatura del horno a 225 grados.
         En el bol de una batidora con varillas echamos el queso crema a temperatura ambiente, el azúcar, la sal y la harina, la nata agria, la vainilla, los huevos y la yema. Batimos hasta obtener una crema lisa y homogénea. Vertemos en el molde y horneamos durante quince minutos a 225 grados, seguidamente bajamos a 130 grados la temperatura y horneamos el cheesecake durante una hora y veinte minutos.
         La crema del interior no debe cuajar en exceso pues después con el enfriado ya termina de solidificar en la nevera. Dejamos enfriar en el frigorífico unas seis horas como mínimo para que termine de coger cuerpo.</p>
     </section>
 
     <section class="section_det">
         <h2>Consejos para una tarta de queso sin horno perfecta</h2>
-        <ul>
+        <ul data-aos="fade-right">
           <li>A la hora de montar la nata el mejor consejo es que todos los ingredientes estén fríos. Al contrario que en el merengue (que debe estar a temperatura ambiente) la nata debe utilizarse fría. La nata, el azúcar y el recipiente deben estar recién salidos de la nevera.</li>
           <li>Esta receta clásica o tarta de queso clásica es la receta más sencilla que podréis encontrar pues es mezclar y listo. Para que la tarta de queso sea un éxito le he añadido fresas de calidad, pero podéis emplear la mermelada o confitura (como en el vídeo) que más os guste.</li>
           <li>Admite un montón de variaciones, melocotón, fresas, frutos del bosque, naranja amarga, mango, pera, limón… la fruta es la aliada de esta tarta de queso.</li>
@@ -118,13 +100,13 @@
         <div class="slider-container swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="img/risotto-slider1.jpg" alt="Slide 1 risotto de setas">
+              <img src="img/tartaqueso_slide1.jpg" alt="Slide 1 tarta de queso">
             </div>
             <div class="swiper-slide">
-              <img src="img/risotto-slider2.jpg" alt="Slide 2 risotto de setas">
+              <img src="img/tartaqueso_slide2.jpg" alt="Slide 2 tarta de queso">
             </div>
             <div class="swiper-slide">
-              <img src="img/risotto-slider3.jpg" alt="Slide 3 risotto de setas">
+              <img src="img/tartaqueso_slide3.jpg" alt="Slide 3 tarta de queso">
             </div>
           </div>
 
@@ -137,29 +119,10 @@
 
     <section class="section_det">
       <h2>Sigue el proceso completo</h2>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/YO9oA8o8ZDE?si=eCy6_TMORVE_i_8w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/YO9oA8o8ZDE?si=eCy6_TMORVE_i_8w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen data-aos="fade-up"></iframe>
     </section>
 
-    <footer class="footer">
-      <div class="footer__container">
-        <div class="footer__col footer__col--logo">
-          <img src="img/logo_sinfondo.png" alt="Mundo Gourmet">
-        </div>
-
-        <div class="footer__col footer__col--links">
-          <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="/categoria">Categoría</a></li>
-            <li><a href="/categoria2">Categoría2</a></li>
-            <li><a href="/enlaces">Enlaces</a></li>
-          </ul>
-        </div>
-
-        <div class="footer__col footer__col--info">
-          <p>Mundo Gourmet, desarrollado por Noé Andreu Serrano<br> para la asignatura Herramientas HTML y CSS.</p>
-        </div>
-      </div>
-    </footer>
+    <include src="./src/partials/footer.html"></include>
 
     <script type="module" src="./script.js"></script>
 </body>

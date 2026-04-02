@@ -32,7 +32,7 @@ header{
   a{
     text-decoration: none;
     color: black;
-    font-family: "Eagle Lake", serif;
+    font-family: "Playfair Display", serif;
     font-weight: 400;
     font-style: normal;
     /*font-family: "Montaga", serif;
@@ -61,7 +61,7 @@ header{
         margin-top: 3rem;
         margin-bottom: 10px;
         font-size: 3rem;
-        font-family: "Eagle Lake", serif;
+        font-family: "Playfair Display", serif;
         font-weight: 400;
         font-style: normal;
         text-align: left;
@@ -76,7 +76,7 @@ header{
         font-weight: 800;
         font-style: italic;
         margin-top: 0;
-        font-family: "Eagle Lake", serif;
+        font-family: "Playfair Display", serif;
         font-weight: 400;
         text-align: left;
         color: white;
@@ -98,7 +98,7 @@ header{
         margin-top: 3rem;
         margin-bottom: 10px;
         font-size: 3rem;
-        font-family: "Eagle Lake", serif;
+        font-family: "Playfair Display", serif;
         font-weight: 400;
         font-style: normal;
         text-align: center;
@@ -113,7 +113,7 @@ header{
         font-weight: 800;
         font-style: italic;
         margin-top: 0;
-        font-family: "Eagle Lake", serif;
+        font-family: "Playfair Display", serif;
         font-weight: 400;
         text-align: center;
         color: white;
@@ -125,7 +125,7 @@ header{
 .section-title{
     margin-top: 8rem;
     font-size: 2rem;
-    font-family: "Eagle Lake", serif;
+    font-family: "Playfair Display", serif;
     font-weight: 400;
     font-style: normal;
     text-align: center;
@@ -409,13 +409,124 @@ header{
   }
 }
 
-.hero_section_detail{
+.hero_section_detail_1{
     display: grid;
     grid-template-columns: repeat(1, 60%);
     justify-content: center; 
     align-items: center;
     gap: 5rem;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/risotto.jpg') center/cover no-repeat;
+    height: 60vh;
+
+    .hero_title{
+        margin-top: 3rem;
+        margin-bottom: 10px;
+        font-size: 3rem;
+        font-family: "Eagle Lake", serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        color: white;
+        /*font-family: "Montaga", serif;
+        font-weight: 400;
+        font-style: normal;*/
+    }
+
+    .brand__tagline{
+        font-size: 1.2rem;
+        font-weight: 800;
+        font-style: italic;
+        margin-top: 0;
+        font-family: "Eagle Lake", serif;
+        font-weight: 400;
+        text-align: center;
+        color: white;
+        /*font-family: "Montaga", serif;
+        font-weight: 400;*/
+    }
+}
+
+.hero_section_detail_2{
+    display: grid;
+    grid-template-columns: repeat(1, 60%);
+    justify-content: center; 
+    align-items: center;
+    gap: 5rem;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/tarta-queso.jpg') center/cover no-repeat;
+    height: 60vh;
+
+    .hero_title{
+        margin-top: 3rem;
+        margin-bottom: 10px;
+        font-size: 3rem;
+        font-family: "Eagle Lake", serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        color: white;
+        /*font-family: "Montaga", serif;
+        font-weight: 400;
+        font-style: normal;*/
+    }
+
+    .brand__tagline{
+        font-size: 1.2rem;
+        font-weight: 800;
+        font-style: italic;
+        margin-top: 0;
+        font-family: "Eagle Lake", serif;
+        font-weight: 400;
+        text-align: center;
+        color: white;
+        /*font-family: "Montaga", serif;
+        font-weight: 400;*/
+    }
+}
+
+.hero_section_detail_3{
+    display: grid;
+    grid-template-columns: repeat(1, 60%);
+    justify-content: center; 
+    align-items: center;
+    gap: 5rem;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/coffee-fest.jpg') center/cover no-repeat;
+    height: 60vh;
+
+    .hero_title{
+        margin-top: 3rem;
+        margin-bottom: 10px;
+        font-size: 3rem;
+        font-family: "Eagle Lake", serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        color: white;
+        /*font-family: "Montaga", serif;
+        font-weight: 400;
+        font-style: normal;*/
+    }
+
+    .brand__tagline{
+        font-size: 1.2rem;
+        font-weight: 800;
+        font-style: italic;
+        margin-top: 0;
+        font-family: "Eagle Lake", serif;
+        font-weight: 400;
+        text-align: center;
+        color: white;
+        /*font-family: "Montaga", serif;
+        font-weight: 400;*/
+    }
+}
+
+.hero_section_detail_4{
+    display: grid;
+    grid-template-columns: repeat(1, 60%);
+    justify-content: center; 
+    align-items: center;
+    gap: 5rem;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/tapa-fusion.jpg') center/cover no-repeat;
     height: 60vh;
 
     .hero_title{
