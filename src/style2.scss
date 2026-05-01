@@ -215,21 +215,44 @@ header{
   }
 
   &__button {
+    position: relative;
+    display: inline-block;
+    font-weight: 700;
     background: $color-primary;
     padding: 12px 25px;
     border-radius: 30px;
     border: none;
     cursor: pointer;
+    text-decoration: none;
+    color: $color-navbar;
+    transition: opacity 0.3s ease;
+    overflow: hidden;
 
-    a{
-      text-decoration: none;
-      color: $color-navbar;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: $color-bg;
+      z-index: 0;
+      transition: width 0.3s ease;
+    }
+
+    span {
+      position: relative;
+      z-index: 1;
     }
 
     &:hover{
-      background: white;
       transform: scale(1.05);
-      color: $color-navbar;
+      opacity: 0.9;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+      width: 100%;
     }
   }
 }
@@ -458,80 +481,6 @@ header{
   }
 }
 
-/*.hero_risotto {
-  background-image: url('img/risotto-1200.webp');
-
-  @media (max-width: 768px) {
-    .hero_risotto {
-      background-image: url('img/risotto-800.webp');
-    }
-  }
-
-  @media (max-width: 480px) {
-    .hero_risotto {
-      background-image: url('img/risotto-400.webp');
-    }
-  }
-  position: relative;
-  height: 60vh;
-  overflow: hidden;
-
-  picture,
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-
-.hero_tarta {
-  background-image: url('img/tarta-queso-1200.webp');
-
-  @media (max-width: 768px) {
-    .hero_risotto {
-      background-image: url('img/tarta-queso-800.webp');
-    }
-  }
-
-  @media (max-width: 480px) {
-    .hero_risotto {
-      background-image: url('img/tarta-queso-400.webp');
-    }
-  }
-}
-
-.hero_coffee {
-  background-image: url('img/coffee-fest-1200.webp');
-
-  @media (max-width: 768px) {
-    .hero_risotto {
-      background-image: url('img/coffee-fest-800.webp');
-    }
-  }
-
-  @media (max-width: 480px) {
-    .hero_risotto {
-      background-image: url('img/coffee-fest-400.webp');
-    }
-  }
-}
-
-.hero_tapa {
-  background-image: url('img/tapa-fusion-1200.webp');
-
-  @media (max-width: 768px) {
-    .hero_risotto {
-      background-image: url('img/tapa-fusion-800.webp');
-    }
-  }
-
-  @media (max-width: 480px) {
-    .hero_risotto {
-      background-image: url('img/tapa-fusion-400.webp');
-    }
-  }
-}*/
-
 .hero_enlaces {
   background-image: url('img/fuentes_informacion-1200.webp');
 
@@ -567,22 +516,46 @@ header{
   }
 
   a{
-    margin-top: 3rem;
+    position: relative;
+    display: inline-block;
+    margin-top: 1rem;
     text-decoration: none;
     color: $color-navbar;
-    padding: 12px 28px;
+    padding: 0px 22px;
     border: 2px solid $color-navbar;
-    border-radius: 30px;
+    border-radius: 50px;
     background-color: transparent;
     transition: all 0.3s ease;
+    overflow: hidden;
+  }
+
+  a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: $color-navbar;
+    z-index: 0;
+    transition: width 0.3s ease;
+  }
+
+  span {
+    position: relative;
+    z-index: 1;
   }
 
   a:hover{
-    background-color: $color-navbar;
-    color: $color-bg;
-    transform: translateY(-2px);
+    transform: translateY(0px);
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     transform: scale(1.05);
+    color: $color-bg;
+  }
+  a:hover::after {
+    transform: scaleX(1);
+    width: 100%;
+    color: $color-bg;
   }
 }
 
