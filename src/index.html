@@ -12,7 +12,15 @@
 
     <section class="hero">
       <div class="hero__icon">
-        <img src="img/logo_sinfondo.png" alt="Icono de la marca"/>
+        <!--<img src="img/logo_sinfondo.png" alt="Icono de la marca"/>-->
+        <img 
+          src="img/logo_sinfondo-400.webp"
+          srcset="
+            img/logo_sinfondo-400.webp 1x,
+            img/logo_sinfondo-800.webp 2x,
+            img/logo_sinfondo-1200.webp 3x"
+          alt="Icono de la marca">
+
       </div>
     </section>
 
@@ -21,13 +29,13 @@
 
       <div class="product-grid" data-aos="fade-up">
         <div class="product-card">
-          <i class="fa-solid fa-utensils fa-3x"></i>
+          <i class="fa-solid fa-utensils fa-3x icono"></i>
           <p>Nuestras recetas</p>
           <a href="categoria.html">Acceder</a>
         </div>
 
         <div class="product-card">
-          <i class="fa-solid fa-alarm-clock fa-3x"></i>
+          <i class="fa-solid fa-alarm-clock fa-3x icono"></i>
           <p>Eventos gastronómicos que recomendamos</p>
           <a href="categoria2.html">Acceder</a>
         </div>
@@ -35,7 +43,7 @@
     </section>
 
     <div class="slider-container swiper">
-      <div class="swiper-wrapper">
+      <!-- <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img src="img/slider-1.jpg" alt="Slide 1">
         </div>
@@ -51,12 +59,86 @@
         <div class="swiper-slide">
           <img src="img/slider-5.jpg" alt="Slide 2">
         </div>
-      </div>
+      </div> -->
+      <div class="swiper-wrapper">
+
+    <div class="swiper-slide">
+      <img 
+        src="img/slider-1-800.jpg"
+        srcset="
+          img/slider-1-400.jpg 400w,
+          img/slider-1-800.jpg 800w,
+          img/slider-1-1200.jpg 1200w"
+        sizes="(max-width: 600px) 100vw,
+             (max-width: 1024px) 80vw,
+             60vw"
+        alt="Slide 1">
+    </div>
+
+    <div class="swiper-slide">
+      <img 
+        src="img/slider-2-800.jpg"
+        srcset="
+          img/slider-2-400.jpg 400w,
+          img/slider-2-800.jpg 800w,
+          img/slider-2-1200.jpg 1200w"
+        sizes="(max-width: 600px) 100vw,
+             (max-width: 1024px) 80vw,
+             60vw"
+        alt="Slide 2">
+    </div>
+
+    <div class="swiper-slide">
+      <img 
+        src="img/slider-3-800.jpg"
+        srcset="
+          img/slider-3-400.jpg 400w,
+          img/slider-3-800.jpg 800w,
+          img/slider-3-1200.jpg 1200w"
+        sizes="(max-width: 600px) 100vw,
+             (max-width: 1024px) 80vw,
+             60vw"
+        alt="Slide 3">
+    </div>
+
+    <div class="swiper-slide">
+      <img 
+        src="img/slider-4-800.jpg"
+        srcset="
+          img/slider-4-400.jpg 400w,
+          img/slider-4-800.jpg 800w,
+          img/slider-4-1200.jpg 1200w"
+        sizes="(max-width: 600px) 100vw,
+             (max-width: 1024px) 80vw,
+             60vw"
+        alt="Slide 4">
+    </div>
+
+    <div class="swiper-slide">
+      <img 
+        src="img/slider-5-800.jpg"
+        srcset="
+          img/slider-5-400.jpg 400w,
+          img/slider-5-800.jpg 800w,
+          img/slider-5-1200.jpg 1200w"
+        sizes="(max-width: 600px) 100vw,
+             (max-width: 1024px) 80vw,
+             60vw"
+        alt="Slide 5">
+    </div>
+
+    </div>
 
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
 
       <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="svg-container" data-aos="fade-up">
+      <img src="img/tomate.svg" class="svg-icon" alt="Ilustración animada de un tomate">
+      <img src="img/aceite.svg" class="svg-icon" alt="Ilustración animada de una botella de aceite">
+      <img src="img/pimiento.svg" class="svg-icon" alt="Ilustración animada de un pimineto">
     </div>
 
     <section class="section__highlight">
@@ -68,19 +150,43 @@
 
       <div class="product-grid2" data-aos="fade-up">
         <div class="product-card">
-          <img src="img/risotto.jpg" alt="Imagen risotto de setas">
+          <!--<img src="img/risotto.jpg" alt="Imagen risotto de setas">-->
+          <img 
+            src="img/risotto-800.webp"
+            srcset="
+              img/risotto-400.webp 400w,
+              img/risotto-800.webp 800w,
+              img/risotto-1200.webp 1200w"
+            sizes="(max-width: 768px) 100vw, 300px"
+            alt="Imagen risotto de setas">
           <p>Risotto de setas</p>
-          <a href="det.html">Ver todos los detalles >></a>
+          <a href="det1.html">Ver todos los detalles >></a>
         </div>
 
         <div class="product-card">
-          <img src="img/pizza.jpg" alt="Imagen pizza">
+          <!--<img src="img/pizza.jpg" alt="Imagen pizza">-->
+          <img 
+            src="img/pizza-800.webp"
+            srcset="
+              img/pizza-400.webp 400w,
+              img/pizza-800.webp 800w,
+              img/pizza-1200.webp 1200w"
+            sizes="(max-width: 768px) 100vw, 300px"
+            alt="Imagen pizza">
           <p>Pizza de pera, jamón y queso gorgonzola</p>
           <a href="#">Ver todos los detalles >></a>
         </div>
 
         <div class="product-card">
-          <img src="img/tarta-queso.jpg" alt="Imagen tarta de queso">
+          <!--<img src="img/tarta-queso.jpg" alt="Imagen tarta de queso">-->
+          <img 
+            src="img/tarta-queso-800.webp"
+            srcset="
+              img/tarta-queso-400.webp 400w,
+              img/tarta-queso-800.webp 800w,
+              img/tarta-queso-1200.webp 1200w"
+            sizes="(max-width: 768px) 100vw, 300px"
+            alt="Imagen tarta de queso">
           <p>Tarta de queso</p>
           <a href="det2.html">Ver todos los detalles >></a>
         </div>
@@ -96,28 +202,66 @@
 
       <div class="product-grid2" data-aos="fade-up">
         <div class="product-card">
-          <img src="img/meat-carnival.jpg" alt="Imagen carne a la brasa">
+          <!--<img src="img/meat-carnival.jpg" alt="Imagen carne a la brasa">-->
+          <img 
+            src="img/meat-carnival-800.webp"
+            srcset="
+              img/meat-carnival-400.webp 400w,
+              img/meat-carnival-800.webp 800w,
+              img/meat-carnival-1200.webp 1200w"
+            sizes="(max-width: 768px) 100vw, 300px"
+            alt="Imagen carne a la brasa">
           <p>Meat Carnival</p>
           <a href="#">Ver todos los detalles >></a>
         </div>
 
         <div class="product-card">
-          <img src="img/coffee-fest.jpg" alt="Imagen granos de café">
+          <!--<img src="img/coffee-fest.jpg" alt="Imagen granos de café">-->
+          <img 
+            src="img/coffee-fest-800.webp"
+            srcset="
+              img/coffee-fest-400.webp 400w,
+              img/coffee-fest-800.webp 800w,
+              img/coffee-fest-1200.webp 1200w"
+            sizes="(max-width: 768px) 100vw, 300px"
+            alt="Imagen granos de café">
           <p>Coffee Fest</p>
           <a href="det3.html">Ver todos los detalles >></a>
         </div>
 
         <div class="product-card">
-          <img src="img/organic-food-iberia.jpg" alt="Imagen alimentos orgánicos">
+          <!--<img src="img/organic-food-iberia.jpg" alt="Imagen alimentos orgánicos">-->
+          <img 
+            src="img/organic-food-iberia-800.webp"
+            srcset="
+              img/organic-food-iberia-400.webp 400w,
+              img/organic-food-iberia-800.webp 800w,
+              img/organic-food-iberia-1200.webp 1200w"
+            sizes="(max-width: 768px) 100vw, 300px"
+            alt="Imagen alimentos orgánicos">
           <p>Organic Food Iberia</p>
           <a href="#">Ver todos los detalles >></a>
         </div>
       </div>
     </section>
 
+    <section class="section-inspiration">
+      <div class="inspiration-content">
+        <h2>La cocina como experiencia</h2>
+        <p>Descubre la gastronomía como un arte que combina sabor, creatividad y emoción.</p>
+      </div>
+
+      <div class="inspiration-image">
+        <picture>
+          <source media="(max-width: 768px)" srcset="img/inspiracion-400.webp">
+          <img src="img/inspiracion-800.webp" alt="Imagen de un chef cocinando">
+        </picture>
+      </div>
+    </section>
+
     <section class="cta">
       <p>¿Quieres conocer el secreto detrás de este proyecto?</p>
-      <button class="cta__button cta__button--primary">¡QUIERO CONOCER TODOS LOS DETALLES!</button>
+      <button class="cta__button cta__button--primary"><a href="links.html">¡QUIERO CONOCER TODOS LOS DETALLES!</a></button>
     </section>
 
     <include src="./src/partials/footer.html"></include>

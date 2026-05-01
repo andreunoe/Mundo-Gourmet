@@ -10,7 +10,21 @@
 <body>
     <include src="./src/partials/header.html"></include>
 
-    <section class="hero_section_detail hero_coffee">
+    <section class="hero_section_detail">
+        <picture>
+            <source 
+                media="(max-width: 768px)" 
+                srcset="img/coffee-fest-movil-1200.webp">
+
+            <source 
+                media="(max-width: 1024px)" 
+                srcset="img/coffee-fest-tablet-1200.webp">
+
+            <img 
+                src="img/coffee-fest-escritorio-1200.webp" 
+                alt="Granos de café">
+        </picture>
+
         <h1 class="hero_title animate__animated animate__bounce">Coffee Fest</h1>
         <p class="brand__tagline animate__animated animate__bounce">Sumérgete en el apasionante universo del café en el Coffee Fest, un evento imprescindible para los amantes del café. Durante varios días, Madrid se convierte en el punto de encuentro de baristas, expertos y curiosos que comparten una misma pasión: descubrir, degustar y aprender todo sobre el café. Vive una experiencia única llena de aromas, sabores y creatividad en un ambiente dinámico y lleno de energía.</p>
     </section>
@@ -33,7 +47,7 @@
         <p data-aos="fade-right">El objetivo es que los asistentes no solo disfruten del café, sino que aprendan a apreciarlo desde una perspectiva más profunda.</p>
 
         <div class="slider-container swiper">
-          <div class="swiper-wrapper">
+          <!--<div class="swiper-wrapper">
             <div class="swiper-slide">
               <img src="img/coffee_slide1.jpg" alt="Slide 1 café">
             </div>
@@ -43,6 +57,68 @@
             <div class="swiper-slide">
               <img src="img/coffee_slide3.jpg" alt="Slide 3 café">
             </div>
+          </div>-->
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <picture>
+                <!-- 📱 móvil -->
+                <source 
+                  media="(max-width: 768px)" 
+                  srcset="
+                    img/coffee_slide1-400.webp 400w,
+                    img/coffee_slide1-800.webp 800w">
+
+                <!-- 💻 principal -->
+                <img 
+                  src="img/coffee_slide1-800.webp"
+                  srcset="
+                    img/coffee_slide1-400.webp 400w,
+                    img/coffee_slide1-800.webp 800w,
+                    img/coffee_slide1-1200.webp 1200w"
+                  sizes="100vw"
+                  alt="Slide 1 café">
+              </picture>
+            </div>
+
+            <div class="swiper-slide">
+              <picture>
+                <source 
+                  media="(max-width: 768px)" 
+                  srcset="
+                    img/coffee_slide2-400.webp 400w,
+                    img/coffee_slide2-800.webp 800w">
+
+                <img 
+                  src="img/coffee_slide2-800.webp"
+                  srcset="
+                    img/coffee_slide2-400.webp 400w,
+                    img/coffee_slide2-800.webp 800w,
+                    img/coffee_slide2-1200.webp 1200w"
+                  sizes="100vw"
+                  alt="Slide 2 café">
+              </picture>
+            </div>
+
+            <div class="swiper-slide">
+              <picture>
+                <source 
+                  media="(max-width: 768px)" 
+                  srcset="
+                    img/coffee_slide3-400.webp 400w,
+                    img/coffee_slide3-800.webp 800w">
+
+                <img 
+                  src="img/coffee_slide3-800.webp"
+                  srcset="
+                    img/coffee_slide3-400.webp 400w,
+                    img/coffee_slide3-800.webp 800w,
+                    img/coffee_slide3-1200.webp 1200w"
+                  sizes="100vw"
+                  alt="Slide 3 café">
+              </picture>
+            </div>
+
           </div>
 
           <div class="swiper-button-next"></div>

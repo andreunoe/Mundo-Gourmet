@@ -11,6 +11,20 @@
     <include src="./src/partials/header.html"></include>
 
     <section class="hero_section_detail hero_tapa">
+        <picture>
+            <source 
+                media="(max-width: 768px)" 
+                srcset="img/tapa-fusion-movil-1200.webp">
+
+            <source 
+                media="(max-width: 1024px)" 
+                srcset="img/tapa-fusion-tablet-1200.webp">
+
+            <img 
+                src="img/tapa-fusion-escritorio-1200.webp" 
+                alt="Tapa">
+        </picture>
+
         <h1 class="hero_title animate__animated animate__bounce">Madrid Fusión</h1>
         <p class="brand__tagline animate__animated animate__bounce">Descubre la vanguardia de la alta cocina en Madrid Fusión, el evento gastronómico más influyente de España y uno de los referentes a nivel mundial. Durante varios días, Madrid se convierte en el epicentro de la innovación culinaria, reuniendo a los mejores chefs, expertos y apasionados de la gastronomía en una experiencia única donde tradición y creatividad se dan la mano.</p>
     </section>
@@ -33,7 +47,7 @@
         <p data-aos="fade-right">Madrid Fusión es un punto de encuentro donde se comparte conocimiento, se descubren ideas innovadoras y se impulsa la evolución de la gastronomía.</p>
 
         <div class="slider-container swiper">
-          <div class="swiper-wrapper">
+          <!--<div class="swiper-wrapper">
             <div class="swiper-slide">
               <img src="img/tapa_slide1.jpg" alt="Slide 1 tapa">
             </div>
@@ -43,6 +57,68 @@
             <div class="swiper-slide">
               <img src="img/tapa_slide3.jpg" alt="Slide 3 tapa">
             </div>
+          </div>-->
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <picture>
+                <!-- 📱 móvil -->
+                <source 
+                  media="(max-width: 768px)" 
+                  srcset="
+                    img/tapa_slide1-400.webp 400w,
+                    img/tapa_slide1-800.webp 800w">
+
+                <!-- 💻 principal -->
+                <img 
+                  src="img/tapa_slide1-800.webp"
+                  srcset="
+                    img/tapa_slide1-400.webp 400w,
+                    img/tapa_slide1-800.webp 800w,
+                    img/tapa_slide1-1200.webp 1200w"
+                  sizes="100vw"
+                  alt="Tapa gourmet presentada en evento gastronómico">
+              </picture>
+            </div>
+
+            <div class="swiper-slide">
+              <picture>
+                <source 
+                  media="(max-width: 768px)" 
+                  srcset="
+                    img/tapa_slide2-400.webp 400w,
+                    img/tapa_slide2-800.webp 800w">
+
+                <img 
+                  src="img/tapa_slide2-800.webp"
+                  srcset="
+                    img/tapa_slide2-400.webp 400w,
+                    img/tapa_slide2-800.webp 800w,
+                    img/tapa_slide2-1200.webp 1200w"
+                  sizes="100vw"
+                  alt="Detalle de tapa creativa en Madrid Fusión">
+              </picture>
+            </div>
+
+            <div class="swiper-slide">
+              <picture>
+                <source 
+                  media="(max-width: 768px)" 
+                  srcset="
+                    img/tapa_slide3-400.webp 400w,
+                    img/tapa_slide3-800.webp 800w">
+
+                <img 
+                  src="img/tapa_slide3-800.webp"
+                  srcset="
+                    img/tapa_slide3-400.webp 400w,
+                    img/tapa_slide3-800.webp 800w,
+                    img/tapa_slide3-1200.webp 1200w"
+                  sizes="100vw"
+                  alt="Presentación de tapa moderna en evento gastronómico">
+              </picture>
+            </div>
+
           </div>
 
           <div class="swiper-button-next"></div>
