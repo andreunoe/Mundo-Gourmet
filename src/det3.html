@@ -22,7 +22,7 @@
 
             <img 
                 src="img/coffee-fest-escritorio-1200.webp" 
-                alt="Granos de café">
+                alt="Granos de café" loading="lazy">
         </picture>
 
         <h1 class="hero_title animate__animated animate__bounce">Coffee Fest</h1>
@@ -52,14 +52,12 @@
 
             <div class="swiper-slide">
               <picture>
-                <!-- 📱 móvil -->
                 <source 
                   media="(max-width: 768px)" 
                   srcset="
                     img/coffee_slide1-400.webp 400w,
                     img/coffee_slide1-800.webp 800w">
 
-                <!-- 💻 principal -->
                 <img 
                   src="img/coffee_slide1-800.webp"
                   srcset="
@@ -67,7 +65,7 @@
                     img/coffee_slide1-800.webp 800w,
                     img/coffee_slide1-1200.webp 1200w"
                   sizes="100vw"
-                  alt="Slide 1 café">
+                  alt="Slide 1 café" loading="lazy">
               </picture>
             </div>
 
@@ -86,7 +84,7 @@
                     img/coffee_slide2-800.webp 800w,
                     img/coffee_slide2-1200.webp 1200w"
                   sizes="100vw"
-                  alt="Slide 2 café">
+                  alt="Slide 2 café" loading="lazy">
               </picture>
             </div>
 
@@ -105,7 +103,7 @@
                     img/coffee_slide3-800.webp 800w,
                     img/coffee_slide3-1200.webp 1200w"
                   sizes="100vw"
-                  alt="Slide 3 café">
+                  alt="Slide 3 café" loading="lazy">
               </picture>
             </div>
 
@@ -132,11 +130,11 @@
 
     <section class="section_det">
       <h2>En esta edición</h2>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/uOCxg5rtk90?si=8w4cKJt3s02PEqWe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen data-aos="fade-up"></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/uOCxg5rtk90?si=8w4cKJt3s02PEqWe" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen data-aos="fade-up"></iframe>
     </section>
 
    <include src="./src/partials/footer.html"></include>
 
-    <script type="module" src="./script.js"></script>
+    <script type="module" defer src="./script.js"></script>
 </body>
 </html>
