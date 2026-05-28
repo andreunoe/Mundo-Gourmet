@@ -3,7 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Mundo Gourmet</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+     <link rel="preload" as="image" href="img/logo_sinfondo-800.webp">
+
     <link rel="stylesheet" href="style2.scss">
     <link rel="icon" type="image/png" href="img/logo_favicon.png">
   </head>
@@ -19,7 +26,7 @@
             img/logo_sinfondo-400.webp 1x,
             img/logo_sinfondo-800.webp 2x,
             img/logo_sinfondo-1200.webp 3x"
-          alt="Icono de la marca" loading="lazy">
+          alt="Icono de la marca">
 
       </div>
     </section>
@@ -48,67 +55,69 @@
 
     <div class="swiper-slide">
       <img 
-        src="img/slider-1-800.jpg"
+        src="img/slider-1-800.webp"
         srcset="
-          img/slider-1-400.jpg 400w,
-          img/slider-1-800.jpg 800w,
-          img/slider-1-1200.jpg 1200w"
+          img/slider-1-400.webp 400w,
+          img/slider-1-800.webp 800w,
+          img/slider-1-1200.webp 1200w"
         sizes="(max-width: 600px) 100vw,
              (max-width: 1024px) 80vw,
              60vw"
-        alt="Slide 1" loading="lazy">
+        alt="Slide 1" 
+        width="1200"
+        height="700">
     </div>
 
     <div class="swiper-slide">
       <img 
-        src="img/slider-2-800.jpg"
+        src="img/slider-2-800.webp"
         srcset="
-          img/slider-2-400.jpg 400w,
-          img/slider-2-800.jpg 800w,
-          img/slider-2-1200.jpg 1200w"
+          img/slider-2-400.webp 400w,
+          img/slider-2-800.webp 800w,
+          img/slider-2-1200.webp 1200w"
         sizes="(max-width: 600px) 100vw,
              (max-width: 1024px) 80vw,
              60vw"
-        alt="Slide 2" loading="lazy">
+        alt="Slide 2" width="1200" height="700" loading="lazy">
     </div>
 
     <div class="swiper-slide">
       <img 
-        src="img/slider-3-800.jpg"
+        src="img/slider-3-800.webp"
         srcset="
-          img/slider-3-400.jpg 400w,
-          img/slider-3-800.jpg 800w,
-          img/slider-3-1200.jpg 1200w"
+          img/slider-3-400.webp 400w,
+          img/slider-3-800.webp 800w,
+          img/slider-3-1200.webp 1200w"
         sizes="(max-width: 600px) 100vw,
              (max-width: 1024px) 80vw,
              60vw"
-        alt="Slide 3" loading="lazy">
+        alt="Slide 3" width="1200" height="700" loading="lazy">
     </div>
 
     <div class="swiper-slide">
       <img 
-        src="img/slider-4-800.jpg"
+        src="img/slider-4-800.webp"
         srcset="
-          img/slider-4-400.jpg 400w,
-          img/slider-4-800.jpg 800w,
-          img/slider-4-1200.jpg 1200w"
+          img/slider-4-400.webp 400w,
+          img/slider-4-800.webp 800w,
+          img/slider-4-1200.webp 1200w"
         sizes="(max-width: 600px) 100vw,
              (max-width: 1024px) 80vw,
              60vw"
-        alt="Slide 4" loading="lazy">
+        alt="Slide 4" width="1200" height="700" loading="lazy">
     </div>
 
     <div class="swiper-slide">
       <img 
-        src="img/slider-5-800.jpg"
+        src="img/slider-5-800.webp"
         srcset="
-          img/slider-5-400.jpg 400w,
-          img/slider-5-800.jpg 800w,
-          img/slider-5-1200.jpg 1200w"
+          img/slider-5-400.webp 400w,
+          img/slider-5-800.webp 800w,
+          img/slider-5-1200.webp 1200w"
         sizes="(max-width: 600px) 100vw,
              (max-width: 1024px) 80vw,
              60vw"
-        alt="Slide 5" loading="lazy">
+        alt="Slide 5" width="1200" height="700" loading="lazy">
     </div>
 
     </div>
@@ -120,9 +129,9 @@
     </div>
 
     <div class="svg-container" data-aos="fade-up">
-      <img src="img/tomate.svg" class="svg-icon" alt="Ilustración animada de un tomate" loading="lazy">
-      <img src="img/aceite.svg" class="svg-icon" alt="Ilustración animada de una botella de aceite" loading="lazy">
-      <img src="img/pimiento.svg" class="svg-icon" alt="Ilustración animada de un pimineto" loading="lazy">
+      <img src="img/tomate.svg" class="svg-icon" alt="Ilustración animada de un tomate">
+      <img src="img/aceite.svg" class="svg-icon" alt="Ilustración animada de una botella de aceite">
+      <img src="img/pimiento.svg" class="svg-icon" alt="Ilustración animada de un pimineto">
     </div>
 
     <section class="section__highlight">
@@ -142,7 +151,7 @@
               img/risotto-800.webp 800w,
               img/risotto-1200.webp 1200w"
             sizes="(max-width: 768px) 100vw, 300px"
-            alt="Imagen risotto de setas" loading="lazy">
+            alt="Imagen risotto de setas" width="800" height="500" loading="lazy">
           <p>Risotto de setas</p>
           <a href="det1.html">Ver todos los detalles >></a>
         </div>
@@ -156,7 +165,7 @@
               img/pizza-800.webp 800w,
               img/pizza-1200.webp 1200w"
             sizes="(max-width: 768px) 100vw, 300px"
-            alt="Imagen pizza" loading="lazy">
+            alt="Imagen pizza" width="800" height="500" loading="lazy">
           <p>Pizza de pera, jamón y queso gorgonzola</p>
           <a href="#">Ver todos los detalles >></a>
         </div>
@@ -170,7 +179,7 @@
               img/tarta-queso-800.webp 800w,
               img/tarta-queso-1200.webp 1200w"
             sizes="(max-width: 768px) 100vw, 300px"
-            alt="Imagen tarta de queso" loading="lazy">
+            alt="Imagen tarta de queso" width="800" height="500" loading="lazy">
           <p>Tarta de queso</p>
           <a href="det2.html">Ver todos los detalles >></a>
         </div>
@@ -194,7 +203,7 @@
               img/meat-carnival-800.webp 800w,
               img/meat-carnival-1200.webp 1200w"
             sizes="(max-width: 768px) 100vw, 300px"
-            alt="Imagen carne a la brasa" loading="lazy">
+            alt="Imagen carne a la brasa" width="800" height="500" loading="lazy">
           <p>Meat Carnival</p>
           <a href="#">Ver todos los detalles >></a>
         </div>
@@ -208,7 +217,7 @@
               img/coffee-fest-800.webp 800w,
               img/coffee-fest-1200.webp 1200w"
             sizes="(max-width: 768px) 100vw, 300px"
-            alt="Imagen granos de café" loading="lazy">
+            alt="Imagen granos de café" width="800" height="500" loading="lazy">
           <p>Coffee Fest</p>
           <a href="det3.html">Ver todos los detalles >></a>
         </div>
@@ -222,7 +231,7 @@
               img/organic-food-iberia-800.webp 800w,
               img/organic-food-iberia-1200.webp 1200w"
             sizes="(max-width: 768px) 100vw, 300px"
-            alt="Imagen alimentos orgánicos" loading="lazy">
+            alt="Imagen alimentos orgánicos" width="800" height="500" loading="lazy">
           <p>Organic Food Iberia</p>
           <a href="#">Ver todos los detalles >></a>
         </div>
@@ -238,7 +247,7 @@
       <div class="inspiration-image">
         <picture>
           <source media="(max-width: 768px)" srcset="img/inspiracion-400.webp">
-          <img src="img/inspiracion-800.webp" alt="Imagen de un chef cocinando" loading="lazy">
+          <img src="img/inspiracion-800.webp" alt="Imagen de un chef cocinando" width="800" height="500" loading="lazy">
         </picture>
       </div>
     </section>
