@@ -6,6 +6,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');*/
+@font-face {
+  font-family: "Lexend Deca";
+  src: url("./fonts/LexendDeca-Regular.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("./fonts/PlayfairDisplay-Italic.woff2") format("woff2");
+  font-weight: 400 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("./fonts/PlayfairDisplay-Regular.woff2") format("woff2");
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
 
 $color-navbar: #1a1a1a;
 $color-primary: #C9A227;
@@ -418,13 +441,13 @@ header{
   background-image: url('img/eventos-1200.webp'); 
   
   @media (max-width: 768px) {
-    .hero_risotto {
+    .hero_eventos {
       background-image: url('img/eventos-800.webp');
     }
   }
 
   @media (max-width: 480px) {
-    .hero_risotto {
+    .hero_eventos {
       background-image: url('img/eventos-400.webp');
     }
   }
@@ -486,13 +509,13 @@ header{
   background-image: url('img/fuentes_informacion-1200.webp');
 
   @media (max-width: 768px) {
-    .hero_risotto {
+    .hero_enlaces {
       background-image: url('img/fuentes_informacion-800.webp');
     }
   }
 
   @media (max-width: 480px) {
-    .hero_risotto {
+    .hero_enlaces {
       background-image: url('img/fuentes_informacion-400.webp');
     }
   }
