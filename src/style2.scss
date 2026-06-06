@@ -402,13 +402,13 @@ header{
   background-image: url('img/recetas-1200.webp'); 
   
   @media (max-width: 768px) {
-    .hero_risotto {
+    .hero_recetas {
       background-image: url('img/recetas-800.webp');
     }
   }
 
   @media (max-width: 480px) {
-    .hero_risotto {
+    .hero_recetas {
       background-image: url('img/recetas-400.webp');
     }
   }
