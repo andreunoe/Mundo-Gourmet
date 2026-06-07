@@ -28,3 +28,21 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+const playButton = document.getElementById('play-video');
+
+if (playButton) {
+  playButton.addEventListener('click', () => {
+    document.getElementById('video-container').innerHTML = `
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube-nocookie.com/embed/Bd47uyuYwwM?autoplay=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    `;
+  });
+}

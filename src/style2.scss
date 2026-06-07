@@ -701,6 +701,32 @@ header{
 .swiper-slide:hover img {
   transform: scale(1.05);
 }
+
+.video-container {
+  position: relative;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.video-thumbnail {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 2rem;
+}
   
 
 /* RESPONSIVE */
