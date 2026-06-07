@@ -14,15 +14,15 @@
         <picture>
             <source 
                 media="(max-width: 768px)" 
-                srcset="img/tapa-fusion-movil-1200.webp">
+                srcset="img/tapa-fusion-movil-400.webp">
 
             <source 
                 media="(max-width: 1024px)" 
-                srcset="img/tapa-fusion-tablet-1200.webp">
+                srcset="img/tapa-fusion-tablet-800.webp">
 
             <img 
                 src="img/tapa-fusion-escritorio-1200.webp" 
-                alt="Tapa" loading="lazy">
+                alt="Tapa" fetchpriority="high">
         </picture>
 
         <h1 class="hero_title animate__animated animate__bounce">Madrid Fusión</h1>
@@ -127,9 +127,16 @@
       <a href="https://www.madridfusion.net/">Web Oficial Madrid Fusión</a>
     </section>
 
-    <section class="section_det">
+    <!--<section class="section_det">
       <h2>En esta edición</h2>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/aUhJUWc6XAc?si=ZqV74IwRONM2LbJ5" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen data-aos="fade-up"></iframe>
+    </section>-->
+    <section class="section_det">
+      <h2>En esta edición</h2>
+      <div class="video-container" data-video="aUhJUWc6XAc">
+        <img src="img/tapa-fusion-400.webp" alt="Vídeo evento Madrid Fusion" class="video-thumbnail" loading="lazy">
+        <button class="video-play">▶</button>
+      </div>
     </section>
 
     <include src="./src/partials/footer.html"></include>

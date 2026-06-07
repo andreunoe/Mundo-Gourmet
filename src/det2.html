@@ -14,15 +14,15 @@
         <picture>
             <source 
                 media="(max-width: 768px)" 
-                srcset="img/tarta-queso-movil-1200.webp">
+                srcset="img/tarta-queso-movil-400.webp">
 
             <source 
                 media="(max-width: 1024px)" 
-                srcset="img/tarta-queso-tablet-1200.webp">
+                srcset="img/tarta-queso-tablet-800.webp">
 
             <img 
                 src="img/tarta-queso-escritorio-1200.webp" 
-                alt="Tarta de queso" loading="lazy">
+                alt="Tarta de queso" fetchpriority="high">
         </picture>
 
         <h1 class="hero_title animate__animated animate__bounce">Tarta de Queso</h1>
@@ -183,9 +183,16 @@
         </div>
     </section>
 
-    <section class="section_det">
+    <!--<section class="section_det">
       <h2>Sigue el proceso completo</h2>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/YO9oA8o8ZDE?si=eCy6_TMORVE_i_8w" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen data-aos="fade-up"></iframe>
+    </section>-->
+    <section class="section_det">
+      <h2>Sigue el proceso completo</h2>
+        <div class="video-container" data-video="YO9oA8o8ZDE">
+            <img src="img/tarta-queso-400.webp" alt="Vídeo receta tarta de queso" class="video-thumbnail" loading="lazy">
+            <button class="video-play">▶</button>
+        </div>
     </section>
 
     <include src="./src/partials/footer.html"></include>
